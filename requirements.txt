@@ -1,0 +1,35 @@
+# Core RAG Framework
+langchain==0.2.16
+langchain-community==0.2.16
+langchain-huggingface==0.0.3
+
+# Document Loaders
+pypdf==4.3.1
+python-docx==1.1.2
+beautifulsoup4==4.12.3
+requests==2.32.3
+
+# Embeddings + Vector Store
+sentence-transformers==3.1.1
+faiss-cpu==1.8.0
+torch==2.4.1
+
+# LLM Gateway
+openai==1.50.2
+
+# Frontend
+streamlit==1.38.0
+
+# Database
+sqlalchemy==2.0.35
+alembic==1.13.3
+
+# Config & Security
+pydantic-settings==2.5.2
+python-dotenv==1.0.1
+bcrypt==4.2.0
+
+# Dev Tools
+pytest==8.3.3
+black==24.8.0
+ruff==0.6.9
