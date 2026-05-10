@@ -30,3 +30,4 @@ class Settings(BaseSettings):
 @lru_cache()   # Singleton — reads .env only once
 def get_settings() -> Settings:
     return Settings()
+settings = get_settings()
