@@ -2,15 +2,15 @@
 from openai import OpenAI
 from typing import List
 from .base import BaseLLM, Message, LLMResponse
-from config.settings import Settings
+from config.settings import settings
 import logging
  
 logger = logging.getLogger(__name__)
  
 class OpenRouterLLM(BaseLLM):
     def __init__(self, model: str | None = None):
-        settings = Settings()
         self.model = model or settings.default_model
+        
         self.client = OpenAI(
             api_key=settings.openrouter_api_key,
             base_url=settings.openrouter_base_url,
