@@ -554,25 +554,4 @@ The following extensions represent concrete paths toward a more scalable and adv
 
 ---
 
-## Resume-Worthy Highlights
-
-> The following bullet points are formatted for direct use in a technical resume or portfolio.
-
-- Designed and implemented a **Advanced RAG pipeline** from scratch — document ingestion through grounded LLM generation — using LangChain, FAISS, and Sentence Transformers.
-- Implemented **Maximum Marginal Relevance (MMR) retrieval** from first principles, balancing relevance and diversity in context selection to maximize information density within the LLM context window
-- Built a **model-agnostic LLM gateway** using the Strategy design pattern (abstract `BaseLLM` interface), enabling zero-code model swapping between Mixtral, LLaMA-3, and Claude via OpenRouter
-- Engineered **citation-aware prompt templates** that ground every generated response in indexed source chunks with `[Source N]` notation, reducing hallucination at the prompt architecture level
-- Developed a **structured JSON quiz generation pipeline** using temperature-controlled LLM output with schema-enforced prompting and downstream validation — demonstrating advanced structured AI output design
-- Architected a fully **modular codebase** where `core/` has zero dependencies on the UI layer — enabling independent unit testing of every pipeline component and straightforward frontend substitution
-- Implemented **FAISS IndexFlatIP** with L2-normalized embeddings, enabling cosine-equivalent similarity search with stateless index persistence across application restarts
-- Deployed the full system as a **Dockerised multi-service application** with environment-variable-driven configuration, bcrypt-secured authentication, and SQLAlchemy ORM persistence
-
----
-
-<div align="center">
-
-Built with deliberate engineering decisions, not tutorial shortcuts.
-
-**[View on GitHub](https://github.com/ashmita473/atlasrag)** · **[Report an Issue](https://github.com/ashmita473/atlasrag/issues)** · **[Suggest a Feature](https://github.com/ashmita473/atlasrag/issues)**
-
 </div>
