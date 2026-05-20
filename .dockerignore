@@ -1,0 +1,9 @@
+venv
+__pycache__
+*.pyc
+.env
+.streamlit
+data/faiss_indexes
+data/uploads
+*.db
+.git
